@@ -19,11 +19,25 @@ from keras.callbacks import EarlyStopping
 print("Imported.")
 
 
+# use this to predict fall off in review success by day
+#   if it's mainly relying on card or deck success rate then it will not do so well
+
 # TODO: publish add on updating quantified self to export
 #   data from anki that includes deck id
 
-# use this model to predict fall off in review success by day
-#   if it's mainly relying on card or deck success rate then it will not do so well
+# scale to [-1, 1] which seems to have better results
+# https://stats.stackexchange.com/questions/364735/why-does-0-1-scaling
+#   -dramatically-increase-training-time-for-feed-forward-an/364776#364776
+
+# explore batch normalization
+#   https://arxiv.org/abs/1806.02375v1
+
+# study this
+#   https://stats.stackexchange.com/questions/352036/what-should-i-do-when-my
+#   -neural-network-doesnt-learn
+
+# try a getting started problem on kaggle
+#    https://elitedatascience.com/beginner-kaggle
 
 # target chance of performance across random card in deck
 # select the review that will most increase that performance tomorrow
@@ -32,6 +46,9 @@ print("Imported.")
 # study hyperparameter tuning:
 # https://www.analyticsvidhya.com/blog/2021/05/
 #   tuning-the-hyperparameters-and-layers-of-neural-network-deep-learning/
+# https://towardsdatascience.com/supervised-machine-learning-feature
+#   -engineering-and-hyper-parameter-tuning-a3da583dd7b9
+# https://arxiv.org/pdf/1206.5533v2.pdf
 
 # research "half-life regression" and Mozer/Duolingo/ebisu:
 # https://fasiha.github.io/ebisu/
